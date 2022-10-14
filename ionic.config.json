@@ -1,0 +1,7 @@
+{
+  "name": "visto",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
