@@ -1,0 +1,62 @@
+
+ion-title {
+  font-size: 64px;
+  text-align: center;
+  font-variant: small-caps;
+}
+
+ion-checkbox {
+  --size: 32px;
+ // padding-right: 10px;
+}
+
+td {
+  border: 2px solid grey;
+  height: 50px;
+}
+/*
+ion-checkbox::part(container) {
+  border-radius: 0px;
+  border: 2px none #20ec15;
+} */
+
+.filtro {
+  text-align: center;
+  padding-top: 20px;
+}
+.cifra {
+   text-align: right;
+ }
+
+td ion-label {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+}
+.grande {
+  font-size: 64px;
+}
+.carrito {
+  width: 10%;
+  border: 0px;
+}
+.articulo {
+  width: 50%;
+}
+.unidades {
+  width: 10%;
+}
+.precio {
+  width: 20%;
+}
+.botoncito {
+  text-align: center;
+}
+.centrar {
+ // min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+

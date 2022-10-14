@@ -1,0 +1,26 @@
+ion-icon {
+  font-size: 64px;
+}
+
+.titulo {
+  font-size: 32px;
+}
+.contactos
+{
+  float: right;
+  width: 75%;
+}
+.logo {
+  position: relative;
+  left: 25%;
+}
+
+.logo img {
+  background-color: aqua;
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ // transform: translate(-50%, -50%);
+}
+
