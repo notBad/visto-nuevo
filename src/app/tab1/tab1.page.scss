@@ -1,62 +1,107 @@
-
 ion-title {
-  font-size: 64px;
+  font-size: 50px;
   text-align: center;
   font-variant: small-caps;
 }
 
+ion-toggle {
+  height:10px;
+  width: 50px;
+  --background: grey;
+  --background-checked: #20ec15;
+
+  --handle-background: black;
+  --handle-background-checked: #20ec15;
+
+  --handle-width: 25px;
+  --handle-height: 25px;
+  --handle-max-height: auto;
+
+  --handle-spacing: 6px;
+  --handle-border: 0px;
+}
+ion-toggle:hover {
+  --background: #20ec15;
+}
 ion-checkbox {
-  --size: 32px;
- // padding-right: 10px;
+  --size: 80%;
+  --background: grey;
+  --background-checked: #20ec15;
 }
-
-td {
-  border: 2px solid grey;
-  height: 50px;
+ion-checkbox:hover {
+  --background: #20ec15;
 }
-/*
 ion-checkbox::part(container) {
-  border-radius: 0px;
-  border: 2px none #20ec15;
-} */
-
-.filtro {
-  text-align: center;
-  padding-top: 20px;
+  border-radius: 6px;
+  border: 0px;
 }
-.cifra {
-   text-align: right;
- }
 
-td ion-label {
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 20px;
-}
 .grande {
   font-size: 64px;
 }
-.carrito {
-  width: 10%;
-  border: 0px;
+
+.medio {
+  font-size: 32px;
 }
+
+.carrito {
+  width: 5%;
+  margin: 10px;
+  border-bottom: 0;
+}
+
 .articulo {
   width: 50%;
 }
+
 .unidades {
   width: 10%;
 }
+
 .precio {
   width: 20%;
 }
+
 .botoncito {
   text-align: center;
 }
+
 .centrar {
- // min-height: 100px;
+  //min-height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.filtro {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.cifra {
+  text-align: right;
+}
+.dia, .semana, .mes {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/assets/calendar-clear-outline.svg");
+}
+
+.interruptor {
+  width: 30%;
+}
+
+.lista td {
+  height: 50px;
+  border-bottom: 2px solid grey;
+}
+
+.lista ion-label {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
 }
 

@@ -1,90 +1,134 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-        <img src="/assets/logo.svg" alt="logo" height="64px">
+      <img src="/assets/logo.svg" alt="logo" height="64px">
     </ion-buttons>
-      <ion-title>Visto</ion-title>
+    <ion-title>Visto</ion-title>
     <ion-buttons slot="end">
       <ion-icon routerLink="/ayuda" name="help-circle-outline" class="grande"></ion-icon>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
-<ion-grid>
-  <ion-row><!-- Cabecera filtro -->
-    <ion-col class="filtro">
-      <ion-label>Dia</ion-label>
-    </ion-col>
-    <ion-col class="filtro">
-      <ion-label>Semana</ion-label>
-    </ion-col>
-    <ion-col class="filtro">
-      <ion-label>Mes</ion-label>
-    </ion-col>
-  </ion-row>
-  <ion-row><!-- filtros -->
-    <ion-col class="centrar">
-      <ion-item lines="none">
-        <ion-toggle></ion-toggle>
-      </ion-item>
-    </ion-col>
-    <ion-col class="centrar">
-      <ion-item lines="none">
-        <ion-toggle>
-        </ion-toggle>
-      </ion-item>
-    </ion-col>
-    <ion-col class="centrar">
-      <ion-item lines="none">
-        <ion-toggle>
-        </ion-toggle>
-      </ion-item>
-    </ion-col>
-  </ion-row>
-  <ion-row> <!-- lista -->
-    <ion-col>
-      <table width="95%" align="center">
-        <tr>
-          <th class="carrito"><ion-icon name="cart"></ion-icon></th>
-          <th class="articulo"><ion-label>Articulo</ion-label></th>
-          <th class="unidades"><ion-label>Uds</ion-label></th>
-          <th class="precio"><ion-label>Precio</ion-label></th>
-        </tr>
-        <tr>
-          <td class="carrito"><ion-checkbox slot="start"></ion-checkbox></td>
-          <td class="articulo"><ion-label>Pan</ion-label></td>
-          <td class="unidades" class="cifra"><ion-label> 1</ion-label></td>
-          <td class="precio" class="cifra"><ion-label> 0.65</ion-label></td>
-        </tr>
-        <tr>
-          <td class="carrito"><ion-checkbox slot="start"></ion-checkbox></td>
-          <td class="articulo"><ion-label>Cereales</ion-label></td>
-          <td class="unidades" class="cifra"><ion-label> 1</ion-label></td>
-          <td class="precio" class="cifra"><ion-label> 1.75</ion-label></td>
-        </tr>
-        <tr>
-          <td class="carrito"><ion-checkbox slot="start"></ion-checkbox></td>
-          <td class="articulo"><ion-label> Leche</ion-label></td>
-          <td class="unidades" class="cifra"><ion-label> 1</ion-label></td>
-          <td class="precio" class="cifra"><ion-label> 1.13</ion-label></td>
-        </tr>
-      </table>
-    </ion-col>
-  </ion-row>
-  <!-- Totales -->
-  <ion-row>
-    <ion-col>
-      <table width="95%" align="center">
-        <tr>
-          <th class="carrito"><ion-button><ion-icon name="trash"></ion-icon></ion-button></th>
-          <th class="articulo"><ion-label> Total</ion-label></th>
-          <th class="unidades"></th>
-          <td class="precio" class="cifra"><ion-label><b> 1.13</b></ion-label></td>
-        </tr>
-      </table>
-    </ion-col>
-  </ion-row>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="filtro">
+        <table align="center">
+          <tr>
+            <td class="interruptor">
+              <ion-card class="dia">
+                <ion-card-content><h1>Dia</h1>
+                  <ion-toggle id="dia"></ion-toggle>
+                </ion-card-content>
+              </ion-card>
+            </td>
+            <td class="interruptor">
+              <ion-card class="semana">
+                <ion-card-content><h1>Semana</h1>
+                  <ion-toggle id="semana"></ion-toggle>
+                </ion-card-content>
+              </ion-card>
+            </td>
+            <td class="interruptor">
+              <ion-card class="mes">
+                <ion-card-content><h1>Mes</h1>
+                  <ion-toggle id="mes"></ion-toggle>
+                </ion-card-content>
+              </ion-card>
+            </td>
+          </tr>
+        </table>
+      </ion-col>
+    </ion-row>
 
-</ion-grid>
+    <!-- lista -->
+    <ion-row>
+      <ion-col>
+        <table width="95%" align="center" class="lista">
+          <tr>
+            <td class="carrito">
+              <ion-icon name="cart" class="medio"></ion-icon>
+            </td>
+            <td class="articulo">
+              <ion-label><b>Articulo</b></ion-label>
+            </td>
+            <td class="unidades" class="cifra">
+              <ion-label><b>Uds</b></ion-label>
+            </td>
+            <td class="precio" class="cifra">
+              <ion-label><b>Precio</b></ion-label>
+            </td>
+          </tr>
+          <tr>
+            <td class="carrito">
+              <ion-checkbox></ion-checkbox>
+            </td>
+            <td class="articulo">
+              <ion-label>Pan</ion-label>
+            </td>
+            <td class="unidades" class="cifra">
+              <ion-label> 1</ion-label>
+            </td>
+            <td class="precio" class="cifra">
+              <ion-label> 0.65</ion-label>
+            </td>
+          </tr>
+          <tr>
+            <td class="carrito">
+              <ion-checkbox slot="start"></ion-checkbox>
+            </td>
+            <td class="articulo">
+              <ion-label>Cereales</ion-label>
+            </td>
+            <td class="unidades" class="cifra">
+              <ion-label> 1</ion-label>
+            </td>
+            <td class="precio" class="cifra">
+              <ion-label> 1.75</ion-label>
+            </td>
+          </tr>
+          <tr>
+            <td class="carrito">
+              <ion-checkbox slot="start"></ion-checkbox>
+            </td>
+            <td class="articulo">
+              <ion-label> Leche</ion-label>
+            </td>
+            <td class="unidades" class="cifra">
+              <ion-label> 1</ion-label>
+            </td>
+            <td class="precio" class="cifra">
+              <ion-label> 1.13</ion-label>
+            </td>
+          </tr>
+        </table>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <table width="90%" align="center">
+            <tr class="totales">
+              <td class="carrito">
+                <ion-icon name="trash" class="medio"></ion-icon>
+              </td>
+              <td class="unidades" class="cifra">
+                <ion-label><b>Total</b></ion-label>
+              </td>
+              <td class="precio" class="cifra">
+                <ion-label><b>11.13</b></ion-label>
+              </td>
+            </tr>
+          </table>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>
