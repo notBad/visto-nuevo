@@ -6,6 +6,10 @@ ion-title {
 
 .icono {
   font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .grande {
@@ -23,13 +27,13 @@ ion-title {
 }
 
 .articulo {
-  width: 50%;
+  width: 60%;
 }
 
 .unidades {
   width: 10%;
 }
- 
+
 .precio {
   width: 20%;
 }
@@ -48,7 +52,6 @@ ion-title {
   justify-content: center;
 }
 
-
 .cifra {
   text-align: right;
 }
@@ -62,14 +65,6 @@ ion-title {
   padding-left: 10px;
   padding-right: 10px;
   font-size: 20px;
-}
-
-.total ion-label {
-  font-size: 24px;
-}
-
-.total {
-  --background: #00e000;
 }
 
 .espacio_arriba
