@@ -12,16 +12,20 @@
 
 <ion-content>
 <ion-grid>
-
+  <ion-row>
+    <ion-col>
+      <div class="espacio_arriba"></div>
+    </ion-col>
+  </ion-row>
   <ion-row> <!-- lista -->
     <ion-col>
-      <table width="95%" align="center">
+      <table width="95%" align="center" class="lista">
         <tr>
-          <th class="editar"></th>
-          <th class="articulo"><ion-label>Articulo</ion-label></th>
-          <th class="unidades"><ion-label>Uds</ion-label></th>
-          <th class="precio"><ion-label>Precio</ion-label></th>
-          <th class="borrar"></th>
+          <td class="editar"></td>
+          <td class="articulo"><b><ion-label>Articulo</ion-label></b></td>
+          <td class="unidades cifra"><b><ion-label>Uds</ion-label></b></td>
+          <td class="precio cifra"><b><ion-label>Precio</ion-label></b></td>
+          <td class="borrar"></td>
         </tr>
         <tr>
           <td class="editar"><ion-buttons><ion-icon name="create-outline" class="icono"></ion-icon></ion-buttons></td>

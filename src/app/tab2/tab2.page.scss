@@ -1,73 +1,79 @@
 ion-title {
-  font-size: 64px;
+  font-size: 50px;
   text-align: center;
   font-variant: small-caps;
 }
 
-ion-checkbox {
-  --size: 32px;
+.icono {
+  font-size: 32px;
 }
 
-td {
-  border: 2px solid grey;
-  height: 50px;
-}
-
-.editar, .borrar{
-  border: 0px;
-}
-
-ion-checkbox::part(container) {
-  border-radius: 0px;
-  border: 2px none #20ec15;
-}
-
-.filtro {
-  text-align: center;
-}
-.cifra {
-   text-align: right;
- }
-
-td ion-label {
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 20px;
-}
 .grande {
   font-size: 64px;
 }
 
-.editar {
-  width: 10%;
+.medio {
+  font-size: 32px;
 }
+
+.editar {
+  width: 5%;
+  margin: 10px;
+  border-bottom: 0;
+}
+
 .articulo {
   width: 50%;
 }
+
 .unidades {
   width: 10%;
 }
+
 .precio {
   width: 20%;
 }
+
 .borrar {
-  width: 10%;
-  padding-left: 5px;
+  width: 5%;
+  margin: 10px;
+  border-bottom: 0;
 }
 
-.botoncito {
-  text-align: center;
-}
+ */
 .centrar {
- // min-height: 100px;
+  //min-height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-table {
-  margin-top:25px;
+
+
+.cifra {
+  text-align: right;
 }
-.icono {
-  font-size: 30px;
+
+.lista td {
+  height: 50px;
+  border-bottom: 2px solid grey;
 }
+
+.lista ion-label {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.total ion-label {
+  font-size: 24px;
+}
+
+.total {
+  --background: #00e000;
+}
+
+.espacio_arriba
+ {
+  height: 50px;
+ }

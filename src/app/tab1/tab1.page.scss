@@ -9,10 +9,10 @@ ion-toggle {
   width: 50px;
 
   --background: #dddddd;
-  --background-checked: #20ec15;
+  --background-checked: #00e000;
 
   --handle-background: grey;
-  --handle-background-checked: #20ec15;
+  --handle-background-checked: #00e000;
 
   --handle-width: 25px;
   --handle-height: 25px;
@@ -21,17 +21,13 @@ ion-toggle {
   --handle-spacing: 6px;
   --handle-border: 0px;
 }
-/* ion-toggle:hover {
-  --background: #20ec15;
-} */
+
 ion-checkbox {
   --size: 80%;
   --background: grey;
-  --background-checked: #20ec15;
+  --background-checked: #00e000;
 }
-/* ion-checkbox:hover {
-  --background: #20ec15;
-} */
+
 ion-checkbox::part(container) {
   border-radius: 6px;
   border: 0px;
@@ -107,3 +103,10 @@ ion-checkbox::part(container) {
   font-size: 20px;
 }
 
+.total ion-label {
+  font-size: 24px;
+}
+
+.total {
+  --background: #00e000;
+}
