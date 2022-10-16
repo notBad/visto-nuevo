@@ -7,10 +7,11 @@ ion-title {
 ion-toggle {
   height:10px;
   width: 50px;
-  --background: grey;
+
+  --background: #dddddd;
   --background-checked: #20ec15;
 
-  --handle-background: black;
+  --handle-background: grey;
   --handle-background-checked: #20ec15;
 
   --handle-width: 25px;
@@ -20,17 +21,17 @@ ion-toggle {
   --handle-spacing: 6px;
   --handle-border: 0px;
 }
-ion-toggle:hover {
+/* ion-toggle:hover {
   --background: #20ec15;
-}
+} */
 ion-checkbox {
   --size: 80%;
   --background: grey;
   --background-checked: #20ec15;
 }
-ion-checkbox:hover {
+/* ion-checkbox:hover {
   --background: #20ec15;
-}
+} */
 ion-checkbox::part(container) {
   border-radius: 6px;
   border: 0px;
@@ -85,6 +86,7 @@ ion-checkbox::part(container) {
   text-align: right;
 }
 .dia, .semana, .mes {
+  margin: 2%;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("/assets/calendar-clear-outline.svg");

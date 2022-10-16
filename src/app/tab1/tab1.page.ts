@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {
+  constructor() {}
+
+  click(){
+/*     alert('hola'); */
+    this.cargaTabla();
   }
 
   cargaTabla() {
@@ -75,11 +79,33 @@ export class Tab1Page {
           '</td>';
       }
       allRecordsHTML += '</tr>';
+
     }
 
     //Append the table header and all records
-    const table = document.getElementById('lista');
+    const table = document.getElementById('listado');
     table.innerHTML = headerRowHTML + allRecordsHTML;
+    //Aplicar CSS
+    const test = document.getElementById('testeo2');
+    test.style.backgroundColor = '#FF00FF';
+
+    //this.refreshCSS();
   }
+  //para web puede funcionar para ionic no creo que se pueda adaptar
+  refreshCSS = () => {
+    const links = document.getElementsByTagName('link');
+    let i = 0;
+    for (; i < links.length; i++) {
+        if (links[i].getAttribute('rel') === 'stylesheet') {
+            const href = links[i].getAttribute('href')
+                                    .split('?')[0];
+
+            const newHref = href + '?version='
+                        + new Date().getMilliseconds();
+
+            links[i].setAttribute('href', newHref);
+        }
+    }
+  };
 }
 
