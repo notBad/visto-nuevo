@@ -3,16 +3,23 @@ ion-title {
   text-align: center;
   font-variant: small-caps;
 }
-
+/*  ion-grid {
+  background-image: url("/assets/super.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+ */
 ion-toggle {
   height:10px;
   width: 50px;
 
   --background: #dddddd;
-  --background-checked: #00e000;
+  --background-checked: #28ba62;
+
 
   --handle-background: grey;
-  --handle-background-checked: #00e000;
+  --background-checked: #28ba62;
+
 
   --handle-width: 25px;
   --handle-height: 25px;
@@ -25,7 +32,7 @@ ion-toggle {
 ion-checkbox {
   --size: 80%;
   --background: grey;
-  --background-checked: #00e000;
+  --background-checked: #28ba62;
 }
 
 ion-checkbox::part(container) {
@@ -82,6 +89,12 @@ ion-checkbox::part(container) {
   text-align: right;
 }
 .dia, .semana, .mes {
+
+  /*
+  --background: #24D19A;
+   --background: #28ba62;
+  --background: #24d138;
+ */
   margin: 2%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -92,7 +105,7 @@ ion-checkbox::part(container) {
   width: 30%;
 }
 
-.lista td {
+.lista td{
   height: 50px;
   border-bottom: 2px solid grey;
 }
@@ -108,5 +121,15 @@ ion-checkbox::part(container) {
 }
 
 .total {
-  --background: #00e000;
+  --background: rgb(36,209,154);
+  --background: linear-gradient(90deg, rgba(36,209,56,1) 0%, rgba(40,186,98,1) 50%, rgba(36,209,154,1) 100%);
+}
+.cabecera {
+  --background: rgb(36,209,154);
+  --background: linear-gradient(90deg, rgba(36,209,154,1) 0%, rgba(40,186,98,1) 50%, rgba(36,209,56,1) 100%);
+}
+
+.fondo
+{
+  background-color: #28ba62;
 }

@@ -129,7 +129,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <ellipse
-       style="opacity:1;fill:#00e000;fill-opacity:1;stroke:url(#radialGradient5685);stroke-width:2.37683;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;paint-order:normal"
+       style="opacity:1;fill:#28ba62;fill-opacity:1;stroke:url(#radialGradient5685);stroke-width:2.37683;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;paint-order:normal"
        id="path5553"
        cx="50.138542"
        cy="49.873959"
@@ -201,19 +201,19 @@
     <g
        id="g7472">
       <path
-         style="fill:none;stroke:#00e000;stroke-width:2.86565;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;stroke:#28ba62;stroke-width:2.86565;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
          d="M 14.661235,48.30108 29.614999,67.395312 39.977695,29.050338"
          id="path6605" />
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:25.4px;line-height:1.25;font-family:sans-serif;fill:#00e000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:25.4px;line-height:1.25;font-family:sans-serif;fill:#28ba62;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
        x="36.644791"
        y="69.453125"
        id="text6661"><tspan
          sodipodi:role="line"
          id="tspan6659"
-         style="font-size:25.4px;fill:#00e000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+         style="font-size:25.4px;fill:#28ba62;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
          x="36.644791"
          y="69.453125">isto</tspan></text>
   </g>

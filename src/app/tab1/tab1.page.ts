@@ -79,7 +79,6 @@ export class Tab1Page {
           '</td>';
       }
       allRecordsHTML += '</tr>';
-
     }
 
     //Append the table header and all records
