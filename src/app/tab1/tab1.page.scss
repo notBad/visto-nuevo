@@ -3,12 +3,13 @@ ion-title {
   text-align: center;
   font-variant: small-caps;
 }
-/*  ion-grid {
+/*
+ion-grid {
   background-image: url("/assets/super.webp");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
- */
+*/
 ion-toggle {
   height:10px;
   width: 50px;
@@ -16,10 +17,8 @@ ion-toggle {
   --background: #dddddd;
   --background-checked: #28ba62;
 
-
   --handle-background: grey;
   --background-checked: #28ba62;
-
 
   --handle-width: 25px;
   --handle-height: 25px;
@@ -89,12 +88,11 @@ ion-checkbox::part(container) {
   text-align: right;
 }
 .dia, .semana, .mes {
-
-  /*
+/*
   --background: #24D19A;
-   --background: #28ba62;
+  --background: #28ba62;
   --background: #24d138;
- */
+*/
   margin: 2%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,3 +131,24 @@ ion-checkbox::part(container) {
 {
   background-color: #28ba62;
 }
+.pushable {
+  background: #545454;// hsl(340deg 100% 32%);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+.front {
+  display: block;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  background: #787878;
+  color: white;
+  transform: translateY(-6px);
+}
+/*
+.pushable:active .front {
+  transform: translateY(-2px);
+} */
