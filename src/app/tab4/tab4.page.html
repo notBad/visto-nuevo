@@ -1,9 +1,47 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>tab4</ion-title>
+  <ion-toolbar class="cabecera">
+    <ion-buttons slot="start">
+        <img src="/assets/logo.svg" alt="logo" height="64px" routerLink="/ayuda">
+    </ion-buttons>
+      <ion-title>Visto</ion-title>
+ <!--    <ion-buttons slot="end">
+      <ion-icon routerLink="/ayuda" name="help-circle-outline" class="medio"></ion-icon>
+    </ion-buttons> -->
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <div class="espacio_arriba"></div>
+      <!-- TODO titulo de la tab -->
+    </ion-col>
+  </ion-row>
+  <ion-row> <!-- lista -->
+    <ion-col>
+      <table width="95%" align="center" class="lista">
+        <tr>
+          <td class="articulo"><b><ion-label>Articulo</ion-label></b></td>
+          <td class="unidades cifra"><b><ion-label>Uds</ion-label></b></td>
+          <td class="precio cifra"><b><ion-label>Precio</ion-label></b></td>
+          <td class="borrar"></td>
+        </tr>
+        <tr>
+          <td class="articulo"><ion-label>Detergente</ion-label></td>
+          <td class="unidades" class="cifra"><ion-label> 1</ion-label></td>
+          <td class="precio" class="cifra"><ion-label> 0.65</ion-label></td>
+          <td class="borrar"><ion-icon name="close-outline" class="icono"></ion-icon></td>
+        </tr>
 
+      </table>
+
+    </ion-col>
+  </ion-row>
+
+</ion-grid>
+
+<ion-fab slot="fixed" vertical="bottom" horizontal="end" class="ion-padding">
+  <ion-fab-button><ion-icon name="add-outline"></ion-icon></ion-fab-button>
+</ion-fab>
 </ion-content>
