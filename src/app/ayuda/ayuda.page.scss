@@ -1,7 +1,23 @@
-ion-icon {
-  font-size: 64px;
+ion-title {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  // font-variant: small-caps;
 }
-
+ion-content {
+  --background: none;
+  background-color: #A9D6B0;
+}
+/* ion-card {
+  background-color: #BAEDAF;
+} */
+ion-icon {
+  font-size: 40px;
+}
+avatar{
+  size: 128px;
+  padding: 20px;
+}
 .titulo {
   font-size: 32px;
 }
@@ -22,5 +38,9 @@ ion-icon {
   top: 50%;
   left: 50%;
  // transform: translate(-50%, -50%);
+}
+.cabecera {
+  --background: rgb(36,209,154);
+  --background: linear-gradient(90deg, rgba(36,209,154,1) 0%, rgba(40,186,98,1) 50%, rgba(36,209,56,1) 100%);
 }
 

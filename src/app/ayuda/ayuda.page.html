@@ -1,44 +1,33 @@
-
 <ion-header>
-  <ion-toolbar>
-    <ion-title>ayuda</ion-title>
+  <ion-toolbar class="cabecera">
+    <ion-title>Ayuda</ion-title>
     <ion-buttons slot="end">
-<!--       <ion-back-button slot="end" icon="close-circle-outline"> -->
-    <ion-icon name="close-circle-outline" routerLink="/"></ion-icon>
-<!--     </ion-back-button> -->
+      <!--       <ion-back-button slot="end" icon="close-circle-outline"> -->
+      <ion-icon name="close-circle-outline" routerLink="/"></ion-icon>
+      <!--     </ion-back-button> -->
     </ion-buttons>
   </ion-toolbar>
-
 </ion-header>
 
 <ion-content>
   <ion-card>
     <ion-card-header>
-      <iframe width="100%" src="https://www.youtube.com/embed/ptc4Awb0UpU" title="YouTube video player" frameborder="0" allow="clipboard-write; encrypted-media"></iframe>
+      <iframe width="100%" src="https://www.youtube.com/embed/ptc4Awb0UpU" title="YouTube video player" frameborder="0"
+        allow="clipboard-write; encrypted-media"></iframe>
     </ion-card-header>
-
+    <!-- TODO AYUDA -->
     <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+        <p>
+          Actualmente no disponemos del video de ayuda, cuando esté disponible le aparecerá el video correcto encima de este párrafo. Lamentamos las molestias.
+        </p>
     </ion-card-content>
   </ion-card>
 
-<ion-card class="card-contacto">
-  <table>
-    <tr>
-      <td width="150px">
-        <!-- TODO ION-AVATAR -->
-        <img class="logo" src="/assets/logo.svg" alt="logo" height="80px">
-      </td>
-      <td>
-        <h6>Contacto</h6>
-        <p class="titulo"><strong>Visto SA</strong></p>
-        <p>contacto@visto.com</p>
-      </td>
-    </tr>
-  </table>
-
-
-</ion-card>
+  <ion-card class="card-contacto">
+    <ion-item lines="none">
+      <ion-avatar slot="start"><img class="logo" src="/assets/logo.svg" alt="logo" height="80px"></ion-avatar>
+      <p><strong class="titulo">Visto</strong> <br>contacto@visto.com</p>
+    </ion-item>
+  </ion-card>
 
 </ion-content>

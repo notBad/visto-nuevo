@@ -1,9 +1,13 @@
 ion-title {
   font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  font-variant: small-caps;
+  // font-variant: small-caps;
 }
-
+ion-content {
+  --background: none;
+  background-color: #A9D6B0;
+}
 .icono {
   font-size: 32px;
   display: flex;
@@ -58,7 +62,7 @@ ion-title {
 
 .lista td {
   height: 50px;
-  border-bottom: 2px solid grey;
+  // border-bottom: 2px solid grey;
 }
 
 .lista ion-label {
@@ -71,3 +75,7 @@ ion-title {
  {
   height: 50px;
  }
+ .cabecera {
+  --background: rgb(36,209,154);
+  --background: linear-gradient(90deg, rgba(36,209,154,1) 0%, rgba(40,186,98,1) 50%, rgba(36,209,56,1) 100%);
+}

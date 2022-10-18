@@ -1,12 +1,12 @@
 <ion-header>
   <ion-toolbar class="cabecera">
     <ion-buttons slot="start">
-      <img src="/assets/logo.svg" alt="logo" height="64px">
+      <img src="/assets/logo.svg" alt="logo" height="64px" routerLink="/ayuda">
     </ion-buttons>
     <ion-title>Visto</ion-title>
-    <ion-buttons slot="end">
+ <!--    <ion-buttons slot="end">
       <ion-icon routerLink="/ayuda" name="help-circle-outline" class="grande"></ion-icon>
-    </ion-buttons>
+    </ion-buttons> -->
   </ion-toolbar>
 </ion-header>
 
@@ -110,20 +110,20 @@
 
 </ion-content>
 
-<ion-footer >
+<ion-footer>
   <ion-toolbar class="total">
 
-    <table width="90%" align="center" id="testeo1" >
+    <table width="85%" align="center" id="testeo1" >
       <tr class="totales">
         <td class="carrito">
           <ion-icon name="trash" class="medio" (click)="click()" id="testeo2">
           </ion-icon>
         </td>
-        <td class="unidades" class="cifra">
+        <!-- <td class="unidades" class="cifra">
           <ion-label><b>Total</b></ion-label>
-        </td>
+        </td> -->
         <td class="precio" class="cifra">
-          <ion-label><b id="testeo3">11.13</b></ion-label>
+          <ion-label><b id="cifratotal">11.13</b></ion-label>
         </td>
       </tr>
     </table>
